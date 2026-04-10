@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: AppIW
+
+  datasource:
+    url: jdbc:sqlserver://localhost:1433;databaseName=LOGINDB;encrypt=false
+    username: GIOVADB
+    password: Password@123
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        default_schema: AppLogin
+        dialect: org.hibernate.dialect.SQLServerDialect
+
+server:
+  port: 8080
